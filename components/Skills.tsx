@@ -71,7 +71,7 @@ const cardVariants = {
     opacity: 1,
     y: 0,
     scale: 1,
-    transition: { duration: 0.6, ease: 'easeOut' },
+    transition: { duration: 0.6, ease: [0.25, 0.1, 0.25, 1] as const },
   },
 };
 
@@ -91,7 +91,7 @@ function SkillBar({ name, level, delay }: { name: string; level: number; delay: 
         <motion.div
           initial={{ width: 0 }}
           animate={{ width: `${level}%` }}
-          transition={{ duration: 1, delay: delay + 0.3, ease: 'easeOut' }}
+          transition={{ duration: 1, delay: delay + 0.3, ease: [0.25, 0.1, 0.25, 1] as const }}
           className="h-full rounded-full bg-gradient-to-r from-accent-cyan to-accent-purple"
         />
       </div>

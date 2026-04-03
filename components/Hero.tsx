@@ -85,7 +85,7 @@ export default function Hero() {
           x: [0, 30, -20, 0],
           y: [0, -20, 30, 0],
         }}
-        transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
+        transition={{ duration: 20, repeat: Infinity, ease: 'linear' as const }}
       />
 
       <motion.div
@@ -94,7 +94,7 @@ export default function Hero() {
           x: [0, -30, 20, 0],
           y: [0, 30, -20, 0],
         }}
-        transition={{ duration: 15, repeat: Infinity, ease: 'linear' }}
+        transition={{ duration: 15, repeat: Infinity, ease: 'linear' as const }}
       />
 
       <motion.div
@@ -115,7 +115,7 @@ export default function Hero() {
               <motion.div
                 className="absolute inset-0 rounded-full bg-gradient-to-r from-accent-cyan via-accent-purple to-accent-blue"
                 animate={{ rotate: 360 }}
-                transition={{ duration: 3, repeat: Infinity, ease: 'linear' }}
+                transition={{ duration: 3, repeat: Infinity, ease: 'linear' as const }}
               />
               <div className="absolute inset-1 rounded-full bg-dark-900 flex items-center justify-center overflow-hidden">
                 <div className="w-full h-full bg-gradient-to-br from-dark-700 to-dark-800 flex items-center justify-center">
